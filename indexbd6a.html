@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    
+<style>
+	header, main, footer {
+		padding-left: 240px;
+	}
+	@media only screen and (max-width : 992px) {
+		header, main, footer {
+			padding-left: 0;
+		}
+	}
+</style>
+
+
+<!-- Mirrored from cyberrp-th.com/?page=login/login&current=home by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Jan 2021 03:43:56 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>Cyber RP </title>
+
+<link rel="stylesheet" href="../use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+<link rel="stylesheet" href="css/bootstrap4-neon-glow.min.css">
+
+	<link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+	<!-- Font Google Kanit -->
+	<link href="https://fonts.googleapis.com/css?family=Kanit&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel='stylesheet' href='../cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css'>
+	<style>
+		*{
+			font-family: 'Kanit', sans-serif;
+		}
+	</style>
+</head>
+
+
+<nav class="btn dropdown-toggle  navbar fixed-top navbar-toggleable-md navbar-expand-lg double-nav btn-dark" >
+	<!-- SideNav slide-out button -->
+
+	<!-- Breadcrumb-->
+	<ul class="navbar-nav ml-auto flex-wrap flex-row">
+						<li class="nav-item">
+				
+					<a class="ht-tm-element btn btn-shadow btn-outline-success"  href="index892f.html?page=login/login&amp;current=login/login"><i class="fab fa-steam"></i>เข้าสู่ระบบ</a>
+				</li>
+	</ul>
+	</nav>
+
+
+<!-- JQuery -->
+<script type="text/javascript" src="dist/bootstrappro/js/jquery-3.4.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="dist/bootstrappro/js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="dist/bootstrappro/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="dist/bootstrappro/js/mdb.min.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="dist/bootstrappro/css/addons/datatables.css" />
+<script type="text/javascript" src="dist/bootstrappro/js/addons/datatables.js"></script>
+
+
+
+<div class="modal fade" id="popup_model" tabindex="-1" role="dialog" aria-labelledby="popup_model_times_times" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document" id="popup_size">
+		<div class="modal-content">
+			<div class="modal-header bg-success" id="popup_header">
+				<h5 class="modal-title text-white" ><div id="popup_title"></div></h5>
+			</div>
+			<div class="modal-body">
+				<center><div id="popup_motion"></div></center><br>
+				<div id="popup_body"></div>
+			</div>
+			<div class="modal-footer">
+				<div id="popup_button"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script>
+	function show_popup(title, body, button, type, gota, nomotion, size){
+		if(type=="success"){
+			document.getElementById('popup_header').className = "modal-header bg-success";
+			if(!nomotion){
+				document.getElementById('popup_motion').innerHTML = "<i class='fa fa-check fa-4x animated rotateIn text-success'></i>";
+			}
+		}else if(type=="danger"){ 
+			document.getElementById('popup_header').className = "modal-header bg-danger";
+			if(!nomotion){
+				document.getElementById('popup_motion').innerHTML = "<i class='fa fa-times fa-4x animated rotateIn text-danger'></i>";
+				}
+		}else if(type=="warning"){
+			document.getElementById('popup_header').className = "modal-header bg-warning";
+			if(!nomotion){
+				document.getElementById('popup_motion').innerHTML = "<i class='fa fa-exclamation fa-4x animated rotateIn text-warning'></i>";
+			}
+		}
+		
+		if(nomotion){
+			document.getElementById('popup_motion').innerHTML = "";
+		}
+		
+		if(size){
+			document.getElementById('popup_size').className = "modal-dialog modal-lg modal-dialog-centered";
+		}else{
+			document.getElementById('popup_size').className = "modal-dialog modal-dialog-centered";
+		}
+		
+		document.getElementById('popup_title').innerHTML = title;
+		document.getElementById('popup_body').innerHTML = body;
+		
+		if(button=="ปิด"){
+			document.getElementById('popup_button').innerHTML = '<button type="button" id="popup_model_times_button" class="ht-tm-element ht-tm-element btn btn-shadow text-mono btn-outline-shadow text-mono btn-outline-'+type+' waves-effect" data-dismiss="modal" aria-label="Close">ปิด</button>';
+		}else if(button=="ย้อนกลับ"){
+			if(!gota){
+				document.getElementById('popup_button').innerHTML = '<button type="button" id="popup_model_times_button" class="ht-tm-element btn btn-shadow text-mono btn-outline-'+type+' waves-effect" onclick="window.history.back();">ย้อนกลับ</button>';
+			}else{
+				document.getElementById('popup_button').innerHTML = '<button type="button" id="popup_model_times_button" class="ht-tm-element btn btn-shadow text-mono btn-outline-'+type+' waves-effect" onclick="location.replace(\'?page='+gota+'\')">ย้อนกลับ</button>';
+			}
+		}
+		$('#popup_model').modal('show');
+	}
+</script>
+
+<script>
+	function windows_back(){
+		window.history.back();
+	}
+</script>    <body id="topPage" class="indigo-skin" style="background-color:black;">
+        <main>
+    
+        <!-- Page Content -->
+        <div class="w3-animate-opacity container-fluid mt-3" style="padding-top:90px;">
+            <div class="col-lg-10" style="min-height:1000px">
+                			<script type="text/javascript">
+				window.location.href="https://steamcommunity.com/openid/login?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&amp;openid.mode=checkid_setup&amp;openid.return_to=https%3A%2F%2Fcyberrp-th.com%2F%3Fpage%3Dlogin%2Flogin%26current%3Dhome&amp;openid.realm=https%3A%2F%2Fcyberrp-th.com&amp;openid.ns.sreg=http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select";
+			</script>
+		            </div>
+        </div>
+       
+            
+                   
+                </main>
+    </body>
+
+<!-- Mirrored from cyberrp-th.com/?page=login/login&current=home by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Jan 2021 03:43:56 GMT -->
+</html>
